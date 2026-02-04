@@ -3,7 +3,7 @@ cask "sidecar" do
   name "sidecar"
   desc "A TUI dashboard for AI coding agents"
   homepage "https://github.com/marcus/sidecar"
-  version "0.65.0"
+  version "0.65.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "sidecar" do
   on_macos do
     on_intel do
       url "https://github.com/marcus/sidecar/releases/download/v#{version}/sidecar_#{version}_darwin_amd64.tar.gz"
-      sha256 "21e540b28d5add4a6107ebdf2628add7e2d1860009a47d4f7794011aadd34235"
+      sha256 "bcf564c1d5afbe78af50ef6f7bd7b19ef370684351892ee2489b662f57c38873"
     end
     on_arm do
       url "https://github.com/marcus/sidecar/releases/download/v#{version}/sidecar_#{version}_darwin_arm64.tar.gz"
-      sha256 "d399072ff6d4e74a55c4cb2fc9870828c928da697769fd1ed704e1701d2d96ae"
+      sha256 "0bf263418f5bf0f97a385f447f326e395a536dfc7c72a82e85107bef3b4fe4c5"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marcus/sidecar/releases/download/v#{version}/sidecar_#{version}_linux_amd64.tar.gz"
-      sha256 "314cbcb3579050b619d1f8cc9a638df6ad55c3332e3868ddc59b064469949da7"
+      sha256 "fb4a62c81f0d86938b5b2ce6998e8aeea97f577335c17bc93110fb0c92d0d5b8"
     end
     on_arm do
       url "https://github.com/marcus/sidecar/releases/download/v#{version}/sidecar_#{version}_linux_arm64.tar.gz"
-      sha256 "1c35717333927a1d280dc9015af7845ae77656cb2a43f63d683db986c56795c3"
+      sha256 "64f8e52c2f663313e0a32b69da54852749870bc416b486b79838a2151d906558"
     end
   end
 
