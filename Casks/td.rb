@@ -3,7 +3,7 @@ cask "td" do
   name "td"
   desc "Task management CLI for AI-assisted development"
   homepage "https://github.com/marcus/td"
-  version "0.30.0"
+  version "0.31.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "td" do
   on_macos do
     on_intel do
       url "https://github.com/marcus/td/releases/download/v#{version}/td_#{version}_darwin_amd64.tar.gz"
-      sha256 "4400b1c1af7c11259f2f6882bfadf672adab650e67530c998c4900245b337e38"
+      sha256 "86266fbe13ccd673c9ffed9b5c459e514455948748a62970112175063d09768c"
     end
     on_arm do
       url "https://github.com/marcus/td/releases/download/v#{version}/td_#{version}_darwin_arm64.tar.gz"
-      sha256 "3394eb6414d678288918541a126efe5d44c123115f89e5dc86f35bd29d57d876"
+      sha256 "f6365529b227c2b50a3d170653e1b14f8c594cf203306d7e77d92712c9102760"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marcus/td/releases/download/v#{version}/td_#{version}_linux_amd64.tar.gz"
-      sha256 "2004d0ce3acf1ff0d03c7c0561d4caae5e9127d57586a9fe081195a425e7cd05"
+      sha256 "9dc600ed878e12ab9e92368a9e7e8f952554f726dd7e7b3fd511aea1829293d0"
     end
     on_arm do
       url "https://github.com/marcus/td/releases/download/v#{version}/td_#{version}_linux_arm64.tar.gz"
-      sha256 "3d30384d35634172a04c185b3ffc6151b8675e7301ccecad1ad3d07ae8aa9bf7"
+      sha256 "ed51b04703ef360415746704718de1a2812c69d79f286b2be9f053c05dd9f1fa"
     end
   end
 
