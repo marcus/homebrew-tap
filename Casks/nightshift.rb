@@ -3,7 +3,7 @@ cask "nightshift" do
   name "nightshift"
   desc "Nightshift runs AI maintenance tasks overnight"
   homepage "https://github.com/marcus/nightshift"
-  version "0.2.0"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "nightshift" do
   on_macos do
     on_intel do
       url "https://github.com/marcus/nightshift/releases/download/v#{version}/nightshift_#{version}_darwin_amd64.tar.gz"
-      sha256 "358b297881fd0fc6a42494e0a428e73f77c14e1271e44a5e3b79a1ea660f3a02"
+      sha256 "ec58066585af4998a92c15efe64eb2c8dc5616b92b8fdc00b45c7df5c81ba876"
     end
     on_arm do
       url "https://github.com/marcus/nightshift/releases/download/v#{version}/nightshift_#{version}_darwin_arm64.tar.gz"
-      sha256 "4e4c1ae7ccfd1ba3cacec5e5deeaab75884575db332f448b33d9702e23a5de46"
+      sha256 "696d5a6c685adf898e885569d7d354d47b1ec3cf554d7388d2fd30f3c4d1504f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marcus/nightshift/releases/download/v#{version}/nightshift_#{version}_linux_amd64.tar.gz"
-      sha256 "f1313e307aa91429a8e91e7428cc38dbae1bb2cafc961e8a845091f7ff18e32a"
+      sha256 "0637e31d78a6838ad277c61a176a37e1df045f2db76353f2da3d4d629513540c"
     end
     on_arm do
       url "https://github.com/marcus/nightshift/releases/download/v#{version}/nightshift_#{version}_linux_arm64.tar.gz"
-      sha256 "071ecbf953968264416c0d20816cb9c98000e577f7a534fbcff43a21e79b4295"
+      sha256 "4b4526b86dd91f456efcd4657ce5ba0e4d81030642687201a1d631bf3cc57669"
     end
   end
 
