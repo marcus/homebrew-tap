@@ -1,8 +1,8 @@
 class Nightshift < Formula
   desc "AI coding agent runner for overnight maintenance tasks"
   homepage "https://github.com/marcus/nightshift"
-  url "https://github.com/marcus/nightshift/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "87a380940d61802e6f397a917c84dce93e704f8eb5c89e15d6924177726e17b4"
+  url "https://github.com/marcus/nightshift/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "6e184904979f30d6adfbd736227c0378c649ea438bf0d4cc4a38ca60d831b103"
   license "MIT"
   head "https://github.com/marcus/nightshift.git", branch: "main"
 
