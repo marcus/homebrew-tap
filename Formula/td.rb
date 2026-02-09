@@ -1,0 +1,19 @@
+class Td < Formula
+  desc "Task management CLI for AI-assisted development"
+  homepage "https://github.com/marcus/td"
+  url "https://github.com/marcus/td/archive/refs/tags/v0.31.0.tar.gz"
+  sha256 "4a2e1217e0c87cc256fc38341b67a38eb0d64cc6180e227ddf3f18762d11b0d7"
+  license "MIT"
+  head "https://github.com/marcus/td.git", branch: "main"
+
+  depends_on "go" => :build
+
+  def install
+    ldflags = "-s -w -X main.Version=#{version}"
+    system "go", "build", *std_go_args(ldflags:), "."
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/td --version")
+  end
+end
