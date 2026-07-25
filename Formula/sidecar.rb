@@ -1,8 +1,8 @@
 class Sidecar < Formula
   desc "A TUI dashboard for AI coding agents"
   homepage "https://github.com/marcus/sidecar"
-  url "https://github.com/marcus/sidecar/archive/refs/tags/v0.87.0.tar.gz"
-  sha256 "d0ebd9f68dba676b383be667116f192d7dd0f510e23f233728e5f5592823efc1"
+  url "https://github.com/marcus/sidecar/archive/refs/tags/v0.87.1.tar.gz"
+  sha256 "8ec193502c7cfbb2c95945316fa955259b25184569940c3d51edaba119af6df8"
   license "MIT"
   head "https://github.com/marcus/sidecar.git", branch: "main"
 
