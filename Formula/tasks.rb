@@ -1,8 +1,8 @@
 class Tasks < Formula
   desc "Local-first GTD task system for human and AI co-working"
   homepage "https://github.com/marcus/tasks"
-  url "https://github.com/marcus/tasks/archive/refs/tags/v1.11.0.tar.gz"
-  sha256 "5be4e1f3d64131a5893e08ca03dce3d9cd4003613a8cd999959bdf2603bf83f0"
+  url "https://github.com/marcus/tasks/archive/refs/tags/v1.12.0.tar.gz"
+  sha256 "e6fe3b47a2f29e43d7fada5650870a13a2923495d2da7e22d1f01b723f59e082"
   license "MIT"
   head "https://github.com/marcus/tasks.git", branch: "main"
 
@@ -12,7 +12,7 @@ class Tasks < Formula
     ldflags = [
       "-s",
       "-w",
-      "-X github.com/marcus/tasks/internal/buildinfo.Version=v1.11.0",
+      "-X github.com/marcus/tasks/internal/buildinfo.Version=v1.12.0",
       "-X github.com/marcus/tasks/internal/buildinfo.Commit=homebrew",
     ].join(" ")
     system "go", "build", *std_go_args(output: bin/"tasks", ldflags:), "./cmd/tasks"
@@ -21,8 +21,8 @@ class Tasks < Formula
   end
 
   test do
-    assert_match "tasks v1.11.0 (homebrew)", shell_output("#{bin}/tasks --version")
-    assert_match "tasks-api v1.11.0 (homebrew)", shell_output("#{bin}/tasks-api --version")
-    assert_match "tasks-tui v1.11.0 (homebrew)", shell_output("#{bin}/tasks-tui --version")
+    assert_match "tasks v1.12.0 (homebrew)", shell_output("#{bin}/tasks --version")
+    assert_match "tasks-api v1.12.0 (homebrew)", shell_output("#{bin}/tasks-api --version")
+    assert_match "tasks-tui v1.12.0 (homebrew)", shell_output("#{bin}/tasks-tui --version")
   end
 end
