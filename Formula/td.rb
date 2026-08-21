@@ -1,8 +1,8 @@
 class Td < Formula
   desc "Task management CLI for AI-assisted development"
   homepage "https://github.com/marcus/td"
-  url "https://github.com/marcus/td/archive/refs/tags/v0.61.0.tar.gz"
-  sha256 "89c54b19788935406f556f6808a6e410d9cdc8943eb6197ab1874e8e9c3f5a9f"
+  url "https://github.com/marcus/td/archive/refs/tags/v0.62.0.tar.gz"
+  sha256 "12559233e3674b2303843b53e5d0622078ddc2a68b4fc523ae3cd67150d8f9de"
   license "MIT"
   head "https://github.com/marcus/td.git", branch: "main"
 
