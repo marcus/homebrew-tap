@@ -1,8 +1,8 @@
 class Recall < Formula
   desc "Federated, evidence-first retrieval for personal AI agents"
   homepage "https://github.com/marcus/recall"
-  url "https://github.com/marcus/recall/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "00cec11bd7196b910fcb664893be373664c3bbe5a8975a1dd103f12b12d2ad97"
+  url "https://github.com/marcus/recall/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "df6930950b3e3f4b6fd81f754334ac2ac7aeaf21208cdc60a769eab6950d24e6"
   license "Apache-2.0"
   head "https://github.com/marcus/recall.git", branch: "main"
 
@@ -12,7 +12,7 @@ class Recall < Formula
     ldflags = [
       "-s",
       "-w",
-      "-X github.com/marcus/recall/pkg/buildinfo.Version=v0.5.1",
+      "-X github.com/marcus/recall/pkg/buildinfo.Version=v0.6.0",
       "-X github.com/marcus/recall/pkg/buildinfo.Commit=homebrew",
     ].join(" ")
     system "go", "build", *std_go_args(output: bin/"recall", ldflags:), "./cmd/recall"
@@ -24,10 +24,10 @@ class Recall < Formula
   end
 
   test do
-    assert_match "recall v0.5.1 (homebrew)", shell_output("#{bin}/recall version")
-    assert_match "recall-gmail/1 v0.5.1", shell_output("#{bin}/recall-gmail -version")
-    assert_match "recall-qmd/1 v0.5.1", shell_output("#{bin}/recall-qmd -version")
-    assert_match "recall-stream/1 v0.5.1", shell_output("#{bin}/recall-stream -version")
+    assert_match "recall v0.6.0 (homebrew)", shell_output("#{bin}/recall version")
+    assert_match "recall-gmail/1 v0.6.0", shell_output("#{bin}/recall-gmail -version")
+    assert_match "recall-qmd/1 v0.6.0", shell_output("#{bin}/recall-qmd -version")
+    assert_match "recall-stream/1 v0.6.0", shell_output("#{bin}/recall-stream -version")
     assert_path_exists pkgshare/"gmail-conformance/handshake/manifest.json"
     assert_path_exists pkgshare/"qmd-conformance/handshake/manifest.json"
   end
