@@ -1,8 +1,8 @@
 class Comms < Formula
   desc "Short-lived local messaging for independent agent sessions"
   homepage "https://github.com/marcus/comms"
-  url "https://github.com/marcus/comms/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "6b27efa14e057bc79a462409f9e9ddf5ba2f5155c1d1a29af45385b6e953525f"
+  url "https://github.com/marcus/comms/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "3b1879dbb4401f3562773dc00ecac0c5d2d023310fe6a2cd2b3923563f7bf022"
   license "Apache-2.0"
   head "https://github.com/marcus/comms.git", branch: "main"
 
@@ -13,7 +13,7 @@ class Comms < Formula
     ldflags = [
       "-s",
       "-w",
-      "-X github.com/marcus/comms/pkg/buildinfo.Version=v1.2.0",
+      "-X github.com/marcus/comms/pkg/buildinfo.Version=v1.3.0",
       "-X github.com/marcus/comms/pkg/buildinfo.Commit=homebrew",
     ].join(" ")
     system "go", "build", *std_go_args(output: bin/"comms", ldflags:), "./cmd/comms"
@@ -28,6 +28,6 @@ class Comms < Formula
   end
 
   test do
-    assert_match "comms v1.2.0 (homebrew)", shell_output("#{bin}/comms version")
+    assert_match "comms v1.3.0 (homebrew)", shell_output("#{bin}/comms version")
   end
 end
