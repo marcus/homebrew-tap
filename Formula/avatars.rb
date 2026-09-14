@@ -1,5 +1,5 @@
 class Avatars < Formula
-  desc "Deterministic pen-and-ink avatar and profile icon generator"
+  desc "Deterministic avatar generator with six illustrated styles, CLI, API, and studio"
   homepage "https://github.com/marcus/avatars"
   url "https://github.com/marcus/avatars/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "360b18ac0d06923189b6c22b23182bf74c1ae834ca5d7d1d9f4bf761797c05c2"
